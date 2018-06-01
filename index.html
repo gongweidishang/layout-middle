@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上下左右居中展示</title>
+</head>
+<style>
+    *{margin:0; padding: 0;}
+   
+    .box1{
+        position: relative;
+        width:600px;
+        height: 600px;
+        border:solid 1px #ccc;
+    }
+    .box1 img{
+        position: absolute;
+        left:50%;
+        top:50%;
+        width:200px;
+        margin-top: -25%;
+        margin-left: -100px;
+    }
+    .box2{
+        border:solid 1px #ccc;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .box3{
+        vertical-align: middle; 
+        display: table-cell;
+        width:700px;
+        height: 700px;
+        border:solid 1px #ccc; 
+        background: #996;
+        text-align: center;
+    }
+    .box4{
+        vertical-align:middle;
+        display:table-cell; 
+        padding: 100px;
+        border:1px solid #1c4899; 
+        text-align:center; 
+    }
+    .box5{
+        background: #999;
+    }
+    .box5 img{
+        position: absolute;
+        left:0;
+        top:0;
+        right:0;
+        bottom: 0;
+        height: 300px;
+        margin: auto; 
+    }
+    .box6{
+        display: inline-block;
+        padding:50px;
+        margin:0 0 0 0;
+        text-align: center;
+        border:solid 1px #ccc;
+    }
+    .box7{
+        padding:20px;
+        border:solid 1px #ccc;
+        position: relative;
+        font: 2em sans-serif;
+        height: 400px;
+    }
+    .box7-1{
+        border:solid 1px #ccc;
+        position:absolute;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+</style>
+<body>
+    <p>固定高度图片居中</p>
+    <div class='box1'>
+        <img src="b.jpg" alt="">
+    </div>
+    <p>line-height 上下居中  仅适用于一行文字，</p>
+    <div class='box2'>
+        <span>jfhjkahflsh</span>
+    </div>
+    <p>固定高度图片居中</p>
+    <div class="box3">
+        <img src="b.jpg" alt="">
+    </div>
+    <br>
+    <p>非固定高度图片居中</p>
+    <div class="box4">
+        <img src="b.jpg" alt="">
+    </div>  
+    <p>固定高度图片居中</p>
+    <div style='height:30em; width:20em;border:solid 1px #ccc; position: relative; '>
+        <div class="box5">
+            <img src="b.jpg" alt="">
+        </div>    
+    </div> 
+    <p>固定高度图片居中</p>
+    <div class="box6">
+        <img src="b.jpg" alt="">
+    </div> 
+    <p>translate未知高度图片居中</p>
+    <div style="position: relative;">
+        <div class="box7">
+            <div class='box7-1'>
+                和九分裤和喝咖啡好互利互 <br>  惠哈佛的啦
+                和九分裤和喝咖啡好互利互 <br>  惠哈佛的啦
+                和九分裤和喝咖啡好互利互 <br>  惠哈佛的啦
+                和九分裤和喝咖啡好互利互 <br>  惠哈佛的啦
+                和九分裤和喝咖啡好互利互 <br>  惠哈佛的啦
+              
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
